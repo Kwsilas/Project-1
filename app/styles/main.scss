@@ -13,8 +13,11 @@ $icon-font-path: "../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
 
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: gray;
+  background-image: url('http://www.tuliphallschool.com/img/hdh2dwk.png');
+  background-position: center;
+  background-size: cover;
+
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
