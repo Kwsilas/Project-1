@@ -1,3 +1,2 @@
 // jshint devel:true
-console.log('Here we GO!');
-
+console.log('Here we go!');
