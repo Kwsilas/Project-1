@@ -61,16 +61,19 @@ $(document).ready(function() {
 
 
   //get winner function here
-
-  winCombo.forEach(function(arr){
+  var getWinner = function() {
+   winCombo.forEach(function(arr){
     if(_.isEqual(arr, p1Moves)) {
-     // alert ('X is winner!');
+     player1 = 'Winner';
+     alert ('X wins!')
     } else if (_.isEqual(arr, p2Moves)) {
-    //  alert ('O is winner!');
+     player2 = 'Winner';
+     alert ('O wins!')
     } else{
      // alert ('It is a tie!');
-    }//same thing for p2
-  });
+    }
+  })
+  };
 
   //player chooses a space and undates game and html.
 
@@ -79,8 +82,8 @@ $(document).ready(function() {
     picTurn;
     $(this).text(picTurn);
     turn++;
-
     console.log(turn, p1Moves, p2Moves);
+    getWinner();
     //get winner call here
   });
 
