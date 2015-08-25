@@ -47,32 +47,18 @@ $(document).ready(function() {
     }
   };
 
-  //Determine winner.
-
-  //function playerWins() {
-  //if (p1Moves == winCombo[]);
-  //alert('X wins!');
-  // }
-  //else if {(p2Moves == winCombo[]);
-  //alert('O wins!')
-  //}
-  //else alert('Tie.');
-  //}
-
-
   //get winner function here
   var getWinner = function() {
-   winCombo.forEach(function(arr){
-    if(_.isEqual(arr, p1Moves)) {
-     player1 = 'Winner';
-     alert ('X wins!')
-    } else if (_.isEqual(arr, p2Moves)) {
-     player2 = 'Winner';
-     alert ('O wins!')
-    } else{
-     // alert ('It is a tie!');
-    }
-  })
+    winCombo.forEach(function(arr) {
+      if (_.isEqual(arr, p1Moves)) {
+        player1 = 'Winner';
+        alert('X wins!');
+      }
+      else if (_.isEqual(arr, p2Moves)) {
+        player2 = 'Winner';
+        alert('O wins!');
+      }
+    })
   };
 
   //player chooses a space and undates game and html.
