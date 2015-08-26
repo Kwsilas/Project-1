@@ -41,9 +41,11 @@ $(document).ready(function() {
   var trackMoves = function(loc) {
     if (picTurn() == 'X') {
       p1Moves.push(loc);
+      p1Moves.sort();
     }
     else if (picTurn() == 'O') {
       p2Moves.push(loc);
+      p2Moves.sort();
     }
   };
 
@@ -57,16 +59,20 @@ $(document).ready(function() {
       else if (_.isEqual(arr, p2Moves)) {
         player2 = 'Winner';
         alert('O wins!');
+      } else if (turn === 9) {
+        alert ('Tie');
+        return;
       }
     })
   };
+
 
   //player chooses a space and undates game and html.
 
   $('.col-md-3').on('click', function(event) {
     trackMoves(event.target.id);
     picTurn;
-    $(this).text(picTurn);
+    $(this).text(picTurn).off('click');
     turn++;
     console.log(turn, p1Moves, p2Moves);
     getWinner();
