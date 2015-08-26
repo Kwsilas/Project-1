@@ -8,7 +8,7 @@ Create a game with logic for two players of Tic-Tac-Toe.
 ##LINKS
 
 User storyboard: [Trello](https://trello.com/b/ceJjgL1I)
-Deploy game with: [Bitballon]
+Deploy game with: [Bitballon](http://project-tic-tac-toe-31651.bitballoon.com/)
 GitHub [Tic-Tac-Toe](https://github.com/Kwsilas/Project-1)
 
 ##TECHNOLOGY USED
