@@ -12,7 +12,7 @@ $(document).ready(function() {
   var player;
   var p1Moves = [];
   var p2Moves = [];
-
+  //All possible win combos.
   var winCombo = [
     ['b1', 'b2', 'b3'],
     ['b4', 'b5', 'b6'],
@@ -48,6 +48,7 @@ $(document).ready(function() {
     }
   };
 
+  //Search through player arrays and see if they contain winning combo array.
   function checkForWinner(winningCombo, moves) {
     var result = _.includes(moves, winningCombo[0]) && _.includes(moves, winningCombo[1]) && _.includes(moves, winningCombo[2])
     console.log('checkForWinner returning', result, 'for moves', JSON.stringify(moves));
