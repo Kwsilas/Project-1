@@ -1,8 +1,7 @@
+'use strict';
 // jshint devel:true
 
 console.log('Here we go!');
-
-'use strict';
 
 $(document).ready(function() {
 
@@ -50,7 +49,7 @@ $(document).ready(function() {
 
   //Search through player arrays and see if they contain winning combo array.
   function checkForWinner(winningCombo, moves) {
-    var result = _.includes(moves, winningCombo[0]) && _.includes(moves, winningCombo[1]) && _.includes(moves, winningCombo[2])
+    var result = _.includes(moves, winningCombo[0]) && _.includes(moves, winningCombo[1]) && _.includes(moves, winningCombo[2]);
     console.log('checkForWinner returning', result, 'for moves', JSON.stringify(moves));
     return result;
   }
@@ -82,7 +81,7 @@ $(document).ready(function() {
 
   $('.col-md-3').on('click', function(event) {
     trackMoves(event.target.id);
-    picTurn;
+    picTurn();
     $(this).text(picTurn).off('click');
     turn++;
     console.log(turn, p1Moves, p2Moves);

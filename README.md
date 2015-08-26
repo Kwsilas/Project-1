@@ -13,13 +13,13 @@ GitHub [Tic-Tac-Toe](https://github.com/Kwsilas/Project-1)
 
 ##TECHNOLOGY USED
 
-*HTML5
-*SASS
-*JavaScript
-*jQuery, underscore
-*Yeoman, Grunt, Bower
+-HTML5
+-SASS
+-JavaScript
+-jQuery, underscore
+-Yeoman, Grunt, Bower
 
 ##MOCK-UPS
 
-![Mockup](/images/Poject-1/img.jpg)
+![Mockup](https://github.com/Kwsilas/Project-1/blob/master/app/images/Project-1.jpg)
 
